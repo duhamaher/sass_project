@@ -1,3 +1,5 @@
+@import '../../../assets/styles/common-styles.scss';
+
 .first-part {
     background-color: var(--black-color);
     display: grid;
@@ -11,12 +13,8 @@
     grid-row: 1/2;
     width: 80%;
     h2 {
-        text-transform: uppercase;
-        font-family: var(--heading-font);
-        color: var(--white-color);
-        font-size: calc(70px + 20 * ((100vw - 320 * 1px) / 1600));
-        line-height: 1.4em;
-        margin: 0;
+        @extend %header-styles;
+        color: var(--white-color);        
     }
 }
 .second-part {

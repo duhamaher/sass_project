@@ -1,0 +1,27 @@
+@import '../../../assets/styles/common-styles.scss';
+.third-part {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.container {
+    display: grid;
+    grid-template-rows: 
+        minmax(14vw,max-content) 
+        minmax(28vw,max-content) 
+        minmax(14vw,max-content) 
+        minmax(14vw,max-content) 
+        minmax(14vw,max-content) 
+        minmax(28vw,max-content) 
+        minmax(10vw,max-content);
+    grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr;
+}
+.title {
+    grid-area: 1/2/2/3;
+    margin-top: 9%;
+    margin-bottom: 40px;
+    h2 {
+        @extend %header-styles;
+        color: var(--black-color);
+    }
+}

@@ -1,0 +1,9 @@
+%header-styles {
+    font: {
+        size: calc(70px + 20 * ((100vw - 320 * 1px) / 1600));
+        family: var(--heading-font);
+    }
+    line-height: 1.4em;
+    margin: 0;
+    text-transform: uppercase;
+}
