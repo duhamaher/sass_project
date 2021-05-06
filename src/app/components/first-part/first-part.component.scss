@@ -1,0 +1,14 @@
+@import '../../../assets/styles/common-styles.scss';
+
+.container {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr 1fr;
+    background-color: var(--white-color);
+}
+
+section {
+    h1 {
+        @extend %h1-styles;
+        color: black;
+    }
+}
