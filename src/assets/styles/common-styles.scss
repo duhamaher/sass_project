@@ -7,3 +7,15 @@
     margin: 0;
     text-transform: uppercase;
 }
+
+
+%paragraph-container-styles {
+    font: {
+        size: 20px;
+        family: var(--text-font);
+    }
+    p {
+        margin: 0px;
+        line-height: 1.4em;
+    }
+}

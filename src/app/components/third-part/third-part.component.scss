@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    background-color: var(--white-color);
 }
 .container {
     display: grid;
@@ -24,4 +25,69 @@
         @extend %header-styles;
         color: var(--black-color);
     }
+}
+.paragraph {
+    grid-area: 2/2/3/3;
+    width: 90%;
+    color: var(--black-color);
+    @extend %paragraph-container-styles;
+}
+.link-container {
+    width: 200px;
+    margin-top: 9%;
+    min-height: 50px;
+    display: grid;
+    grid-template-columns: minmax(0,1fr);
+    a {
+        background-color: var(--purple-color);
+        min-width: 100%;
+        display: flex;
+        padding: 10px 15px;
+        border-radius: 50px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        box-sizing: border-box;
+        span {
+            font-weight: 700;
+            color: var(--white-color);
+            text-transform: capitalize;
+        }
+    }
+}
+.image-title {
+    text-transform: uppercase;
+    margin-bottom: -30px;
+    height: auto;
+    width: auto;
+    align-self: end;
+    p {
+        line-height: 1.4;
+        margin: 0;
+        color: var(--black-color);
+        font: {
+            weight: 700;
+            size: calc(30px + (50 - 30) * ((100vw - 320 * 1px) / 1600));
+            family: var(--text-font)
+        }
+        text-align: center;
+    }
+}
+.first-image {
+    grid-area: 2/4/4/5;
+}
+.first-image-title {
+    grid-area: 3/4/4/5;
+}
+.second-image {
+    grid-area: 3/2/6/3;
+}
+.second-image-title {
+    grid-area: 4/2/6/3;
+}
+.third-image {
+    grid-area: 5/4/7/5;
+}
+.third-image-title {
+    grid-area: 6/4/7/5;
 }
