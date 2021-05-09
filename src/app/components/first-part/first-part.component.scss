@@ -7,6 +7,22 @@
 }
 
 section {
+    div{ 
+        font: {
+            size:  calc(20px + 10 * ((100vw - 320 * 1px) / 1600));
+            family: var(--text-font);
+        }
+        letter-spacing: 0em;
+        line-height: 1.4;
+        min-height: 0vw;
+
+
+        .purble {
+            color: var(--purple-color);
+        }
+
+
+    }
     h1 {
         @extend %h1-styles;
         color: black;
