@@ -9,6 +9,17 @@
 }
 
 
+%h1-styles {
+    font: {
+        size:  calc(85px + 35 * ((100vw - 320 * 1px) / 1600));
+        family: var(--heading-font);
+    }
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+    min-height: 0vw;
+
+
 %paragraph-container-styles {
     font: {
         size: 20px;
@@ -18,4 +29,5 @@
         margin: 0px;
         line-height: 1.4em;
     }
+
 }

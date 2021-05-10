@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
+import { FirstPartComponent } from './components/first-part/first-part.component';
 import { SecondPartComponent } from './components/second-part/second-part.component';
 import { ThirdPartComponent } from './components/third-part/third-part.component';
 
@@ -11,6 +12,7 @@ import { ThirdPartComponent } from './components/third-part/third-part.component
   declarations: [
     AppComponent,
     HomeComponent,
+    FirstPartComponent,
     SecondPartComponent,
     ThirdPartComponent
   ],
